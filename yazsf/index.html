@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="md5.js"></script>
+</head>
+<body>
+1111
+<script>
+
+    var t = 1577437741726;
+    var jy = "301hn@qAJP";
+
+    var res = securityArithmetic(t, jy);
+    console.log(res)
+    function securityArithmetic(t, jy) {
+        // 一小时生成算法
+        var dT = new Date(t);
+        var timestamp = (new Date(dT.toLocaleDateString() + " " + dT.getHours() +":00:00")).getTime();
+        var tArray = timestamp.toString().split("");
+        var zdz = [];
+        tArray.forEach(v=>{
+            if (v != 0) {
+                zdz.push(jy[10-v]);
+            }
+        });
+        var sixteenBit = strToHexCharCode(zdz.join(""));
+        console.log(timestamp);
+        console.log(sixteenBit);
+        console.log(sixteenBit + timestamp + jy);
+        res = hex_md5(sixteenBit + timestamp + jy);
+        return res;
+    }
+
+    function strToHexCharCode(str) {
+        if(str === "")
+            return "";
+        var hexCharCode = [];
+        hexCharCode.push();
+        for(var i = 0; i < str.length; i++) {
+            hexCharCode.push((str.charCodeAt(i)).toString(16));
+        }
+        return hexCharCode.join("").toUpperCase();
+    }
+
+</script>
+</body>
+</html>
