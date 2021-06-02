@@ -4,11 +4,14 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 		<link rel="stylesheet" href="css/new_file.css" />
+        <link rel="stylesheet" type="text/css" href="css/aui.css" />
+
 		<script type="text/javascript" src="js/jquery-1.8.2.min.js" ></script>
 		<script type="text/javascript" src="js/new_file.js" ></script>
 		<link rel="stylesheet" href="layer/mobile/need/layer.css" />
 		<script type="text/javascript" src="layer/mobile/layer.js" ></script>
-		<title>好艺多充值</title>
+ 
+		<title>优惠充值</title>
 	</head>
 	<body>
 		<!--头部  star-->
@@ -20,69 +23,132 @@
 		</header>
 		<!--头部 end-->
 		<div class="banner">
-			<img src="images/banner.png" width="100%" height="100%"/>
+            <div class="aui-tab" id="tab">
+                <div class="aui-tab-item aui-active">话费</div>
+                <div class="aui-tab-item"><div></div>电费</div>
+                <div class="aui-tab-item">会员</div>
+            </div>
+			<!-- <img src="images/banner.png" width="100%" height="100%"/> -->
 		</div>
+        <div class="phone">
+            <div class="aui-content aui-margin-b-15 ">
+                <ul class="aui-list aui-form-list">
+                    <li class="aui-list-item">
+                        <div class="aui-list-item-inner">
+        
+                            <div class="aui-list-item-input">
+                                <input type="text" placeholder="请输入手机号">
+                            </div>
+                            <div class="aui-list-item-label-icon">
+                                <i class="aui-iconfont aui-icon-mobile"></i>
+                            </div>
+                            <div>
+                                
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="aui-content aui-margin-b-15 phone-info">
+                
+            </div>
+        </div>
 		<!--充值列表-->
 		<div class="person_wallet_recharge">
 			<ul class="ul">
                 <li>
-                    <h2>￥500</h2>
+                    <h2 >30元</h2>
+                    <p>售价￥28</p>
                     <div class="sel" style=""></div>
                 </li>
                 <li>
-                    <h2>￥800</h2>
+                    <h2 >50元</h2>
+                    <p >售价￥28</p>
                     <div class="sel" style=""></div>
                 </li>
                 <li>
-                    <h2>￥1200</h2>
+                    <h2>100元</h2>
+                    <p>售价￥28</p>
                     <div class="sel" style=""></div>
                 </li>
                 <li>
-                    <h2>￥2000</h2>
+                    <h2>200元</h2>
+                    <p style="font-size: 0.2rem;">售价￥28</p>
                     <div class="sel" style=""></div>
                 </li>
                 <li>
-                    <h2>￥3000</h2>
+                    <h2>300元</h2>
+                    <p>售价￥28</p>
                     <div class="sel" style=""></div>
                 </li>
                 <li>
-                    <h2>￥5000</h2>
+                    <h2>500元</h2>
+                    <p >售价￥28</p>
                     <div class="sel" style=""></div>
                 </li>
                 <li>
-                   <h2>￥10000</h2>
+                    <h2>200元</h2>
+                    <p style="font-size: 0.2rem;">售价￥28</p>
                     <div class="sel" style=""></div>
                 </li>
                 <li>
-                   <h2>￥20000</h2>
+                    <h2>300元</h2>
+                    <p>售价￥28</p>
                     <div class="sel" style=""></div>
                 </li>
                 <li>
-					<h2>￥50000</h2>
+                    <h2>500元</h2>
+                    <p >售价￥28</p>
                     <div class="sel" style=""></div>
                 </li>
                 <div style="clear: both;"></div>
             </ul>
-            <div class="pic">金额：<input type="text" placeholder="金额必须为100元以上" id="txt" /></div>
-            <div class="botton">我要充值</div>
-            <div class="agreement"><p>点击我要充值，即您已经表示同意<a>《充返活动协议》</a></p></div>
-            <div class="nav">
+            <!-- <div class="pic">金额：<input type="text" placeholder="金额必须为100元以上" id="txt" /></div> -->
+            <div class="botton recharge">充值</div>
+            <!-- <div class="nav">
             	<ul>
             		<li><a>余额:200元</a></li>
             		<li><a>活动规则</a></li>
             		<li style="border-right: none;"><a>我的奖品</a></li>
             	</ul>
-            </div>
+            </div> -->
             <!--遮罩层-->
             <div class="f-overlay"></div>
             <div class="addvideo" style="display: none;">
             	<h3>本次充值<span>2000</span>元</h3>
+            	<h4>本次充值<span>2000</span>元</h4>
 	            <ul>
+	            	<li><a>余额支付</a></li>
 	            	<li><a>微信支付</a></li>
-	            	<li><a>支付宝支付</a></li>
 	            	<li class="cal">取消</li>
 	            </ul> 
             </div>
 		</div>
+        <footer class="aui-bar aui-bar-tab" id="footer">
+            <div class="aui-bar-tab-item aui-active" tapmode>
+                <i class="aui-iconfont aui-icon-home"></i>
+                <div class="aui-bar-tab-label">首页</div>
+            </div>
+            <div class="aui-bar-tab-item" tapmode>
+                <i class="aui-iconfont aui-icon-star"></i>
+                <div class="aui-bar-tab-label">订单</div>
+            </div>
+            <div class="aui-bar-tab-item" tapmode>
+                <i class="aui-iconfont aui-icon-my"></i>
+                <div class="aui-bar-tab-label">我的</div>
+            </div>
+        </footer>
 	</body>
+    <script type="text/javascript" src="aui/script/api.js" ></script>
+    <script type="text/javascript" src="aui/script/aui-tab.js" ></script>
+    <script type="text/javascript">
+        apiready = function(){
+            api.parseTapmode();
+        }
+        var tab = new auiTab({
+            element:document.getElementById("tab"),
+        },function(ret){
+            console.log(ret)
+        });
+    </script>
 </html>

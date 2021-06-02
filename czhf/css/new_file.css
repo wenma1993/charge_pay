@@ -23,7 +23,7 @@ body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
 	font-size: 1em;
 	font: inherit;
 	vertical-align: baseline;
-	font-family: "Microsoft YaHei"
+	font-family: "Microsoft YaHei";
 }
 body {
 	font-family: "Microsoft YaHei";
@@ -106,8 +106,6 @@ header ._left img {
 }
 .banner{
 	width: 100%;
-	height: 300px;
-	background:pink;
 	margin-top: 2.5rem;
 	margin-bottom: 0.5rem;
 }
@@ -119,7 +117,7 @@ header ._left img {
 .person_wallet_recharge .ul li{
 	float: left;
     width: 27%;
-    height: 2.2rem;
+    height: 3.6rem;
     text-align: center;
     border: 1px solid #CCCCCC;
     border-radius: 0.2rem;
@@ -128,6 +126,7 @@ header ._left img {
     box-sizing: border-box;
     color: #525252;
     position: relative;
+	background-color: #fff;
 }
 .person_wallet_recharge .sel{
 	background: url(../images/iconfont-dagouxuanzhong.png);
@@ -156,6 +155,7 @@ header ._left img {
     width: 91%;
     margin: 0 auto;
     font-size: 0.85rem;
+	margin-top: 2rem;
 }
 .person_wallet_recharge .pic{
 	background: #FFFFFF;
@@ -249,4 +249,16 @@ header ._left img {
 }
 .layui-m-layercont{
 	padding: 10px 20px !important;
+}
+.ul h2{
+	height: 25px;font-size: 1.0rem;
+}
+.ul p{
+	font-size: 0.2rem;
+}
+.phone{
+	height: 80px;
+}
+.phone-info{
+	height: 50px;
 }
